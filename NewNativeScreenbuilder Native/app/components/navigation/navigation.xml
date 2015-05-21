@@ -1,0 +1,16 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:header="utils/action-bar" loaded="pageLoaded">
+
+    <GridLayout rows="auto, *">
+        <header:action-bar />
+        <!-- CONTENT -->
+        <ListView row="1" items="{{ menuItems }}" isScrollings="true" itemTap="menuItemTap">
+            <ListView.itemTemplate>
+                <GridLayout columns="48, *" rows="*">
+                    <StackLayout height="50" />
+                    <Image src="{{ icon }}" width="32" height="32" margin="8 6" />
+                    <Label col="1" text="{{ title }}" textWrap="true" />
+                </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </GridLayout>
+</Page>

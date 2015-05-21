@@ -1,0 +1,37 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:header="utils/action-bar" loaded="pageLoaded">
+
+    <GridLayout rows="auto, *">
+        <header:action-bar />
+        <StackLayout row="1">
+
+            <GridLayout rows="*">
+
+                <ListView items="{{ listItems }}" itemTap="onListViewItemTap">
+
+                    <ListView.itemTemplate>
+                        <GridLayout columns="48, *" cssClass="padded-label">
+                            <StackLayout height="50" />
+
+                            <Image col="0" width="32" height="32" margin="8 6" src="{{ icon }}" />
+
+                            <StackLayout col="2" cssClass="padded-label-stack">
+                                <Label col="1" cssClass="title-label" textWrap="true">
+                                    <Label.formattedText>
+                                        <FormattedString>
+                                            <FormattedString.spans>
+                                                <Span text="{{ header }}" fontAttributes="Bold" />
+                                            </FormattedString.spans>
+                                        </FormattedString>
+                                    </Label.formattedText>
+                                </Label>
+                            </StackLayout>
+
+                        </GridLayout>
+                    </ListView.itemTemplate>
+                </ListView>
+            </GridLayout>
+
+            <!-- additional view content -->
+        </StackLayout>
+    </GridLayout>
+</Page>

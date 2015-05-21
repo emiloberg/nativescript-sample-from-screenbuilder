@@ -1,0 +1,13 @@
+{
+  "dependsOn": [
+    "generator-NativeScript@0.0.6"
+  ],
+  "generator-NativeScript": {
+    "cleanup": [
+      "./app/providers/defaultProvider-data-provider.js",
+      "./app/components/home/",
+      "./app/components/dataListView/",
+      "./app/components/signInView/"
+    ]
+  }
+}

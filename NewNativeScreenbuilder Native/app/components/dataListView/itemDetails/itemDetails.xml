@@ -1,0 +1,12 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:header="utils/action-bar" navigatedTo="navigatedTo">
+    <GridLayout rows="auto, *">
+        <header:action-bar />
+        <StackLayout row="1">
+
+            <Label text="{{ header }}" />
+
+            <Label text="{{ subheader }}" />
+
+        </StackLayout>
+    </GridLayout>
+</Page>

@@ -1,14 +1,71 @@
 {
   "type": "NativeScript",
-  "isNew": true,
+  "name": "nativeScriptApp",
+  "navigation": "listmenu",
+  "views": [
+    {
+      "type": "view",
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home",
+      "components": []
+    },
+    {
+      "type": "view",
+      "name": "dataListView",
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "organize",
+      "components": [
+        {
+          "type": "list",
+          "name": "dataListViewModel",
+          "dataProvider": "defaultProvider",
+          "masterDetails": true,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "collection": "Comments",
+          "iconField": true,
+          "headerField": "ActivityId",
+          "detailHeaderField": "ActivityId",
+          "detailSubHeaderField": "Comment"
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "signInView",
+      "title": "Sign In",
+      "addToNavigation": true,
+      "icon": "contacts",
+      "components": [
+        {
+          "type": "signin",
+          "name": "signInViewModel",
+          "dataProvider": "defaultProvider",
+          "usernameLabel": "Username",
+          "passwordLabel": "Password",
+          "confirmLabel": "Sign In",
+          "signinRedirect": "home",
+          "navigateToSignup": false,
+          "usernamePlaceholder": "",
+          "passwordPlaceholder": ""
+        }
+      ]
+    }
+  ],
+  "view": "home",
+  "skin": "native",
+  "transition": "none",
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": true,
       "everliveKey": "jcu3PhvNqHOh4Afg",
+      "offlineStorage": true,
       "everliveUrl": ""
     }
   ]
