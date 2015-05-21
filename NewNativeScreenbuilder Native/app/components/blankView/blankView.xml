@@ -1,0 +1,9 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:header="utils/action-bar" loaded="pageLoaded">
+
+    <GridLayout rows="auto, *">
+        <header:action-bar />
+        <StackLayout row="1">
+            <!-- additional view content -->
+        </StackLayout>
+    </GridLayout>
+</Page>

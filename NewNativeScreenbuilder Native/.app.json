@@ -53,6 +53,82 @@
           "passwordPlaceholder": ""
         }
       ]
+    },
+    {
+      "type": "view",
+      "name": "formView",
+      "title": "Form",
+      "addToNavigation": true,
+      "icon": "bookmarks",
+      "components": [
+        {
+          "type": "form",
+          "name": "formViewModel",
+          "components": [
+            {
+              "type": "field",
+              "name": "username",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "johndoe"
+            },
+            {
+              "type": "field",
+              "name": "search",
+              "title": "Search",
+              "inputType": "search",
+              "placeholder": "Search"
+            },
+            {
+              "type": "field",
+              "name": "password",
+              "title": "Password",
+              "inputType": "password",
+              "placeholder": "******"
+            },
+            {
+              "type": "field",
+              "name": "switch",
+              "title": "Switch",
+              "inputType": "switch",
+              "placeholder": "johndoe"
+            }
+          ],
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "registerView",
+      "title": "Register",
+      "addToNavigation": true,
+      "icon": "edit",
+      "components": [
+        {
+          "type": "signup",
+          "name": "registerViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Email",
+          "usernameLabel": "Username",
+          "passwordLabel": "Password",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "navigateToSignin": false,
+          "emailPlaceholder": "",
+          "usernamePlaceholder": "",
+          "passwordPlaceholder": ""
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "blankView",
+      "title": "Blank",
+      "addToNavigation": true,
+      "icon": "featured",
+      "components": []
     }
   ],
   "view": "home",

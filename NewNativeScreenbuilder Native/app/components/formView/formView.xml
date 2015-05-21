@@ -1,0 +1,58 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:header="utils/action-bar" loaded="pageLoaded">
+
+    <GridLayout rows="auto, *">
+        <header:action-bar />
+        <StackLayout row="1">
+
+            <StackLayout cssClass="form-view">
+
+                <GridLayout columns="*, *" rows="auto">
+                    <StackLayout height="50" />
+                    <Label text="Username" cssClass="label" />
+
+                    <TextField col="1" cssClass="input" />
+
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+                <GridLayout columns="*, *" rows="auto">
+                    <StackLayout height="50" />
+                    <Label text="Search" cssClass="label" />
+
+                    <SearchBar col="1" />
+
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+                <GridLayout columns="*, *" rows="auto">
+                    <StackLayout height="50" />
+                    <Label text="Password" cssClass="label" />
+
+                    <TextField col="1" secure="true" cssClass="input" />
+
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+                <GridLayout columns="*, *" rows="auto">
+                    <StackLayout height="50" />
+                    <Label text="Switch" cssClass="label" />
+
+                    <Switch col="1" checked="false" />
+
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+                <!-- formViewModel additional fields -->
+                <GridLayout columns="*, *" rows="auto" padding="12">
+
+                    <Button text="Cancel" tap="onformViewModelFormCancel" />
+
+                    <Button col="1" text="Confirm" tap="onformViewModelFormSubmit" />
+
+                </GridLayout>
+            </StackLayout>
+
+            <!-- additional view content -->
+        </StackLayout>
+    </GridLayout>
+</Page>

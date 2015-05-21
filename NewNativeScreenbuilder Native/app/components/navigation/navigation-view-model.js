@@ -15,6 +15,18 @@ menuItems = [{
     "title": "Sign In",
     "modulePath": "components/signInView/signInView",
     "icon": "~/images/icons/contacts.png"
+}, {
+    "title": "Form",
+    "modulePath": "components/formView/formView",
+    "icon": "~/images/icons/bookmarks.png"
+}, {
+    "title": "Register",
+    "modulePath": "components/registerView/registerView",
+    "icon": "~/images/icons/edit.png"
+}, {
+    "title": "Blank",
+    "modulePath": "components/blankView/blankView",
+    "icon": "~/images/icons/featured.png"
 }];
 
 navigationViewModel.set('menuItems', menuItems);
