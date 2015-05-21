@@ -22,6 +22,12 @@ Service.prototype.getAllRecords = function(args) {
     var data = dataService.data('Comments'),
         expandExp = {};
 
+    expandExp = {
+        ActivityId: {
+            'SingleField': 'Uri'
+        }
+    };
+
     return data.expand(expandExp).get()
         .then(onRequestSuccess.bind(this))
         .catch(onRequestFail.bind(this));

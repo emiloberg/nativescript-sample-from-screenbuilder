@@ -27,7 +27,9 @@
           "endlessScroll": false,
           "collection": "Comments",
           "iconField": true,
+          "imageField": "ActivityId",
           "headerField": "ActivityId",
+          "subHeaderField": "Comment",
           "detailHeaderField": "ActivityId",
           "detailSubHeaderField": "Comment"
         }

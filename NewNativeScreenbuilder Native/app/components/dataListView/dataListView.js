@@ -39,7 +39,13 @@ function pageLoaded(args) {
             result.forEach(function(item) {
                 itemsList.push({
 
+                    icon: '~/images/icons/globe.png',
+
+                    image: item.ActivityId,
+
                     header: item.ActivityId,
+
+                    description: item.Comment,
 
                     details: {
 
